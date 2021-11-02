@@ -1,5 +1,5 @@
 #in this workflow code analysis will happen
-name: sonar analysis
+name: sonar analysis2
 on:
   push:
     branches:
