@@ -2,8 +2,8 @@
 name: sonar analysis2
 on:
   push:
-    branches:
-      - vishnu
+    branches: vishnu
+      
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
