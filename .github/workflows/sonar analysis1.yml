@@ -1,9 +1,9 @@
 #in this workflow code analysis will happen
-name: Build
+name: sonar analysis
 on:
   push:
     branches:
-      - master
+      - vishnu
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
