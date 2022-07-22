@@ -1,0 +1,18 @@
+name: GitHub Actions sample maven Build
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step1 - checkout main branch from GitHub
+      - uses: actions/checkout@v2
+
+      - name: Step2 - Setup JDK 1.8
+        uses: actions/setup-java@v1
+        with: 
+          java-version: 1.8
+    
+      - name: step3 - start build using maven
+        run:  mvn -B --file pom.xml
