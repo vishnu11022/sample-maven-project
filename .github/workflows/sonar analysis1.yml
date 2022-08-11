@@ -1,4 +1,4 @@
-#in this workflow code analysis will happen
+#in this workflow code analysis will happen directly
 name: sonar 
 on:
   push:
