@@ -1,6 +1,11 @@
 name: GitHub Actions sample maven Build
 on:
   workflow_dispatch:
+    inputs:
+      vishnu-ref-branch:
+        description: referencing a branch
+        required: true
+        default: master
 
 jobs:
   build:
